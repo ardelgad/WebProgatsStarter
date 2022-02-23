@@ -36,3 +36,12 @@ body {
     gap: 15px
 }
 
+section.fotos {
+    background: url(img/mobileCat.jpg); 
+    height: 400px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+}
+
