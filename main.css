@@ -1,10 +1,35 @@
 :root {
-    --primary: #f2b366
+    --primary: #f2b366;
+    --secondary: #36210f;
+    --bg: rgba(0, 0, 0, 0.719);
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(190, 183, 171, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #7a4831;
+    font-weight: 700;
 }
 
 .header {
@@ -17,6 +42,10 @@ body {
     text-transform: uppercase;
     text-shadow: 2px 2px black;
     text-align: center;
+}
+
+.header--logo {
+    display: none;
 }
 
 .menu--item {
@@ -36,12 +65,82 @@ body {
     gap: 15px
 }
 
-section.fotos {
+.fotos {
+    height: 60vh;
+    margin-top: 1rem;
     background: url(img/mobileCat.jpg); 
-    height: 400px;
-    width: 300px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 3%;
+    background-position: center 25%;
+    color: white;
+    font-size: 5vw;
+    font-weight: 700;
+    text-shadow: 5px 5px black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
+.team--member {
+    height: 23vh;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.patricia{
+    background: url(./img/patricia.png) no-repeat center 20%, url(img/pawns.jpg);
+   
+}
+
+.veronica{
+    background: url(./img/veronica.png) no-repeat center 20%, url(img/pawns.jpg);
+   
+}
+
+.edurne{
+    background: url(./img/edurne.png) no-repeat center 20%, url(img/pawns.jpg);
+}
+
+.member--name {
+    color: var(--secondary);
+    margin: 0.5em 0 0 0;
+}
+
+.member--info {
+    background-color: var(--bg);
+    color: white;
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+}
+
+@media (min-width: 600px) {
+    .header--title {
+      display: none;
+    }
+
+    .header--logo {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .header {
+        display: flex;
+    }
+    
+    .menu--item {
+        width: 40%;
+    }
+    
+  }
