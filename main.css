@@ -2,7 +2,8 @@
 :root {
     --primary: #f2b366;
     --secondary: #3f2f21;
-    --bg-primary: rgba(190, 183, 171, 0.3);
+    --bg-primary: black;
+    --footer: #ebd9c9;
   }
   
   * {
@@ -18,7 +19,7 @@
   /* Selectores de clase */
   
   .header {
-    background-color: black;
+    background-color: var(--bg-primary);
     padding: 2ch;
   }
 
@@ -55,7 +56,7 @@
     gap: 16px;
   }
   
-  .hero {
+  .section--p {
     height: 50vh;
     background-image: url("./img/mobileCat.jpg");
     background-size: cover;
@@ -83,7 +84,7 @@
     gap: 1rem;
   }
   
-  .members--card {
+  .member {
     height: 200px;
     display: flex;
     justify-content: flex-end;
@@ -97,23 +98,24 @@
     max-width: 500px;
   }
   
-  .card__patricia {
+  .patricia {
     background: url("./img/patricia.png") no-repeat center 10%,
-      url("./img/pawns.jpg");
+      url("./img/paws.jpg");
   }
   
-  .card__veronica {
+  .veronica {
     background: url("./img/veronica.png") no-repeat center 10%,
-      url("./img/pawns.jpg");
+      url("./img/paws.jpg");
   }
   
-  .card__edurne {
+  .edurne {
     background: url("./img/edurne.png") no-repeat center 10%,
-      url("./img/pawns.jpg");
+      url("./img/paws.jpg");
   }
   
-  .members--title {
+  .team {
     text-align: center;
+    color: var(--secondary);
   }
   
   .members--name {
@@ -121,11 +123,11 @@
   }
   
   .members--name,
-  .members--role {
+  .role {
     margin: 0;
   }
   
-  .members--role {
+  .role {
     color: white;
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.8);
@@ -137,7 +139,7 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    background-color: var(--bg-primary);
+    background-color: var(--footer);
   }
   
   .footer--link {
@@ -162,7 +164,7 @@
       justify-content: be;
     }
   
-    .hero {
+    .section--p {
       background-image: url("./img/sleepingCat.jpg");
     }
   }

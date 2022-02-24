@@ -15,7 +15,7 @@
     align-items: center;
   }
   
-  .hero {
+  .section--p {
     align-items: center;
   }
   
@@ -28,11 +28,11 @@
     flex-direction: row;
   }
 
-  .members--card {
+  .member {
     transition: transform 0.5s;
   }
   
-  .members--card:hover {
+  .member:hover {
     transform: scale(1.1);
   }
 
